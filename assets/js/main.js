@@ -49,4 +49,12 @@ var NavbarCollapse = function () {
             }))
         }
     }))
+}(), loading= function () {
+    $(document).ready(function() {
+
+        setTimeout(function(){
+            $('body').addClass('loaded');
+        }, 3000);
+
+    });
 }();
