@@ -9,212 +9,70 @@
 	<link href='https://fonts.googleapis.com/css?family=Comfortaa:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
-	<style>
-	body {
-		background-color: #efefef;
-	}
-	.vertical-center {
-		min-height: 100%;
-		min-height: 100vh;
-
-		display: flex;
-		align-items: center;
-	}
-	.title {
-		font-family: 'Comfortaa', cursive;
-		text-align: center;
-		font-size: 6em;
-		font-size: 9.5vw;
-	}
-	@media only screen and (min-width: 992px) {
-		.title {
-			font-size: 9em;
-			font-size: 9vw;
-		}
-	}
-	
-	.social-link, .social-link:hover {
-		color: #afafaf;
-		text-decoration: none;
-	}
-	
-	@-webkit-keyframes in_color_change {
-		from { color: #afafaf; }
-		to { color: #0077B5; }
-	}
-	@-moz-keyframes in_color_change {
-		from { color: #afafaf; }
-		to { color: #0077B5; }
-	}
-	@-ms-keyframes in_color_change {
-		from { color: #afafaf; }
-		to { color: #0077B5; }
-	}
-	@-o-keyframes in_color_change {
-		from { color: #afafaf; }
-		to { color: #0077B5; }
-	}
-	@keyframes in_color_change {
-		from { color: #afafaf; }
-		to { color: #0077B5; }
-	}
-
-	.social-link:hover i.in {
-		-webkit-animation: in_color_change .5s;
-		-moz-animation: in_color_change .5s;
-		-ms-animation: in_color_change .5s;
-		-o-animation: in_color_change .5s;
-		animation: in_color_change .5s;
-		color: #0077B5;
-	}
-
-	@-webkit-keyframes gt_color_change {
-		from { color: #afafaf; }
-		to { color: #000000; }
-	}
-	@-moz-keyframes gt_color_change {
-		from { color: #afafaf; }
-		to { color: #000000; }
-	}
-	@-ms-keyframes gt_color_change {
-		from { color: #afafaf; }
-		to { color: #000000; }
-	}
-	@-o-keyframes gt_color_change {
-		from { color: #afafaf; }
-		to { color: #000000; }
-	}
-	@keyframes gt_color_change {
-		from { color: #afafaf; }
-		to { color: #000000; }
-	}
-
-	.social-link:hover .gt {
-		-webkit-animation: gt_color_change .5s;
-		-moz-animation: gt_color_change .5s;
-		-ms-animation: gt_color_change .5s;
-		-o-animation: gt_color_change .5s;
-		animation: gt_color_change .5s;
-		color: #000000;
-	}
-
-	@-webkit-keyframes yt_color_change {
-		from { color: #afafaf; }
-		to { color: #ff0000; }
-	}
-	@-moz-keyframes yt_color_change {
-		from { color: #afafaf; }
-		to { color: #ff0000; }
-	}
-	@-ms-keyframes yt_color_change {
-		from { color: #afafaf; }
-		to { color: #ff0000; }
-	}
-	@-o-keyframes yt_color_change {
-		from { color: #afafaf; }
-		to { color: #ff0000; }
-	}
-	@keyframes yt_color_change {
-		from { color: #afafaf; }
-		to { color: #ff0000; }
-	}
-
-	.social-link:hover i.yt {
-		-webkit-animation: yt_color_change .5s;
-		-moz-animation: yt_color_change .5s;
-		-ms-animation: yt_color_change .5s;
-		-o-animation: yt_color_change .5s;
-		animation: yt_color_change .5s;
-		color: #ff0000;
-	}
-
-
-	@-webkit-keyframes fb_color_change {
-		from { color: #afafaf; }
-		to { color: #4267b2; }
-	}
-	@-moz-keyframes fb_color_change {
-		from { color: #afafaf; }
-		to { color: #4267b2; }
-	}
-	@-ms-keyframes fb_color_change {
-		from { color: #afafaf; }
-		to { color: #4267b2; }
-	}
-	@-o-keyframes fb_color_change {
-		from { color: #afafaf; }
-		to { color: #4267b2; }
-	}
-	@keyframes fb_color_change {
-		from { color: #afafaf; }
-		to { color: #4267b2; }
-	}
-
-	.social-link:hover i.fb {
-		-webkit-animation: fb_color_change .5s;
-		-moz-animation: fb_color_change .5s;
-		-ms-animation: fb_color_change .5s;
-		-o-animation: fb_color_change .5s;
-		animation: fb_color_change .5s;
-		color: #4267b2
-	}
-
-	@-webkit-keyframes tw_color_change {
-		from { color: #afafaf; }
-		to { color: #1da1f2; }
-	}
-	@-moz-keyframes tw_color_change {
-		from { color: #afafaf; }
-		to { color: #1da1f2; }
-	}
-	@-ms-keyframes tw_color_change {
-		from { color: #afafaf; }
-		to { color: #1da1f2; }
-	}
-	@-o-keyframes tw_color_change {
-		from { color: #afafaf; }
-		to { color: #1da1f2; }
-	}
-	@keyframes tw_color_change {
-		from { color: #afafaf; }
-		to { color: #1da1f2; }
-	}
-
-	.social-link:hover i.tw {
-		-webkit-animation: tw_color_change .5s;
-		-moz-animation: tw_color_change .5s;
-		-ms-animation: tw_color_change .5s;
-		-o-animation: tw_color_change .5s;
-		animation: tw_color_change .5s;
-		color: #1da1f2;
-	}
-	.blog {
-		font-family: 'Comfortaa', cursive;
-		font-size: 9px;
-		font-weight: bold;
-	}
-</style>
+	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-	<div class="jumbotron vertical-center">
-		<div class="container">
-			<h1 class="title">SMAN<span class="text-danger">32</span>GARUT</h1>
-			<div class="text-center">
+	<header class="header-transparent" id="header-main">
 
-
-				<a href="mailto:sman32garut@gmail.com" class="social-link">
-					<span class="fa-stack">
-						<i class="far fa-circle fa-stack-2x"></i>
-						<i class="fas fa-at fa-stack-1x gt"></i>
-					</span>
+		<nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-dark bg-dark" id="navbar-main">
+			<div class="container">
+				<a class="navbar-brand mr-lg-5" href="./index.html">
+					<img alt="Image placeholder" src="./img/logo.png" style="height: 60px;">
 				</a>
 
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
+				<div class="navbar-collapse collapse" id="navbar-main-collapse" style="">
+
+					<ul class="navbar-nav align-items-lg-center ml-lg-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#doc" target="_blank">Visi Misi</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#prestasi" target="_blank">Prestasi</a>
+						</li>
+
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+
+	</header>
+	<main>
+		<section class="section-rotate">
+			<div class="section-inner bg-gradient-primary">
+				<div class="background-pic"></div>
 			</div>
 
-		</div>
-	</div>
+			<div class="container pt-lg pb-xl-md position-relative zindex-100" style="margin-top: 100px;">
+				<div class="row">
+					<div class="col-lg-5 text-center text-lg-left">
+						<a href="pages/pages-shop.html" class="alert alert-news" data-toggle="tooltip" data-original-title="See changelog">
+							<span class="badge badge-pill badge-warning">Baru</span>
+							<span class="alert-content">Download brosur terbaru kami.</span>
+							<i class="fa fa-angle-right"></i>
+						</a>
+						<div class="">
+							<h2 class="text-white my-4">
+								<span class="display-4 font-weight-light">SMAN 32 Garut</span>
+								<span class="d-block">Kita <strong class="font-weight-light"> Bisa</strong></span>
+							</h2>
+							<p class="lead text-white">Moto kami pendidikan nomer 1 di atas segalanya dan kami adalah sekolah terbaik di Indonesia, Murid kami adalah anak kami.</p>
+							<div class="mt-5">
+								<a href="#sct_page_examples" class="btn btn-dark btn-circle btn-translate--hover btn-icon mr-sm-4 scroll-me">
+									<span class="btn-inner--text">Visi Misi</span>
+									<span class="btn-inner--icon"><i class="fas fa-angle-right"></i></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
