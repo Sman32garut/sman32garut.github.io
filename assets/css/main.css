@@ -94,8 +94,17 @@ body {
     top: 0;
     width: 51%;
     height: 100%;
-    background: #222;
+    background: #fff;
     z-index: 1000;
+}
+#loader-wrapper img {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1111;
+    width: 50px;
+    margin: -25px 0 0 -25px;
 }
 
 #loader-wrapper .loader-section.section-left {
@@ -129,6 +138,14 @@ body {
     transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
 
 }
+
+.loaded #loader-wrapper img {
+    opacity: 0;
+
+    -webkit-transition: all 0.3s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+    transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+
 .loaded #loader-wrapper {
     visibility: hidden;
 
