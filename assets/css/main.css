@@ -11,6 +11,10 @@ body {
     background-color: #fff
 }
 
+.lead {
+    font-weight: 400;
+}
+
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -576,8 +580,9 @@ a:not([href]):not([tabindex]):focus {
 }
 
 .bg-gradient-primary {
-    background: linear-gradient(-45deg, #e2cb05, #fffa43, #f9c500, #ffffff);
-    background-size: 400% 400%;
+    background: linear-gradient(80deg, #f9c500, #fff67f, #f9c500, #fff67f);
+
+    background-size: 200% 200%;
     -webkit-animation: Gradient 15s ease infinite ;
     -moz-animation: Gradient 15s ease infinite ;
     animation: Gradient 15s ease infinite ;
@@ -637,4 +642,14 @@ a:not([href]):not([tabindex]):focus {
     margin-left: -40%;
     content: '';
     background: radial-gradient(ellipse at center, rgba(0, 0, 0, .2) 0, rgba(255, 255, 255, 0) 75%)
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery a {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
 }
