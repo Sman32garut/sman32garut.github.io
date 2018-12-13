@@ -71,10 +71,6 @@ var NavbarCollapse = function () {
                 resolution: "standard_resolution",
                 sortBy: "most-recent",
                 limit: 4,
-                filter: function (image) {
-                    console.log(image);
-                    return true;
-                },
                 template: '<div class="col-lg-3 mb-5 mb-lg-0"> <div data-animate-hover="1" data-toggle="hidden"> ' +
                 '<div class="card shadow animate-this card-visi"> <a href="{{image}}" data-caption="{{caption}}">' +
                 '<img src="{{image}}" alt="{{caption}}" /></a> </div> </div> </div>',
@@ -111,7 +107,7 @@ var NavbarCollapse = function () {
                 after: function() {
                     // disable button if no more results to load
                     if (!this.hasNext()) {
-                        loadButton.setAttribute('disabled', 'disabled');
+                        loadButtonPengajar.setAttribute('disabled', 'disabled');
                     }
                 }
             });
