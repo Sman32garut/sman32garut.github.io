@@ -796,29 +796,29 @@ a:not([href]):not([tabindex]):focus {
     background-size: cover;
 }
 
-.modal .modal-content {
+.modal .modal-full .modal-content {
     border-radius: 0;
     display: flex;
     flex-direction: column;
 }
 
-.modal .modal-content .modal-header {
+.modal .modal-full  .modal-content .modal-header {
     flex: none;
     border-bottom: none;
 }
 
-.modal .modal-content .modal-header .modal-title {
+.modal .modal-full  .modal-content .modal-header .modal-title {
     line-height: 48px;
     font-weight: 600;
 }
 
-.modal .modal-content .modal-body {
+.modal .modal-full  .modal-content .modal-body {
     padding: 0;
     height: 100vh;
     position: relative;
 }
 
-.modal .modal-content .modal-body .close {
+.modal .modal-full  .modal-content .modal-body .close {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -831,11 +831,11 @@ a:not([href]):not([tabindex]):focus {
     font-weight: 700;
 }
 
-.modal .modal-content .modal-body .close:hover {
+.modal .modal-full  .modal-content .modal-body .close:hover {
     opacity: 0.8 !important;
 }
 
-.modal .modal-content .modal-body .modal-form {
+.modal .modal-full  .modal-content .modal-body .modal-form {
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid #fff;
     color: #fff;
@@ -843,20 +843,20 @@ a:not([href]):not([tabindex]):focus {
     border-radius: 8px;
 }
 
-.modal .modal-content .modal-body .text-area-form {
+.modal .modal-full  .modal-content .modal-body .text-area-form {
     height: 200px;
 }
 
-.modal .modal-content .modal-body ::placeholder {
+.modal .modal-full .modal-content .modal-body ::placeholder {
     color: #fff;
     opacity: 1;
 }
 
-.modal .modal-content .modal-body textarea {
+.modal .modal-full .modal-content .modal-body textarea {
     height: 100px;
 }
 
-.modal .modal-content .modal-body .btn-modal {
+.modal .modal-full .modal-content .modal-body .btn-modal {
     background: #FFA801;
     border: 1px solid #FFA801;
     border-radius: 8px;
@@ -864,7 +864,7 @@ a:not([href]):not([tabindex]):focus {
     padding: 10px;
 }
 
-.modal .modal-content .modal-body .modal-contact {
+.modal .modal-full  .modal-content .modal-body .modal-contact {
     position: absolute;
     left: 50%;
     top: 50%;

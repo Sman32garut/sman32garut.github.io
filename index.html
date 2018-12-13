@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.0/dist/baguetteBox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
 
 </head>
@@ -101,7 +102,12 @@
                         <div class="mt-5">
                             <button class="btn btn-dark btn-circle btn-translate--hover btn-icon mr-sm-4"
                                     data-toggle="modal" data-target="#contactModal">Hubungi Kami <span
-                                    class="btn-inner--icon"><i class="fas fa-angle-right"></i></span></button>
+                                    class="btn-inner--icon"><i class="fas fa-angle-right"></i></span>
+                            </button>
+                            <button type="button" class="btn btn-outline-danger btn-circle btn-translate--hover btn-icon mr-sm-4"
+                                    data-toggle="modal" data-target="#calendarModal">
+                                Kalender <i class="fas fa-angle-right"></i></span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -352,6 +358,21 @@
 
 
 <div>
+    <div class="modal fade bd-example-modal-lg" id="calendarModal" tabindex="-1" role="dialog" aria-labelledby="calendarModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Kalender</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="calendar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
@@ -468,7 +489,26 @@
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/baguettebox.js@1.11.0/dist/baguetteBox.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/id.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js"></script>
 <script src="./assets/js/main.js"></script>
+
+<script type='text/javascript'>
+
+    $(function() {
+        $('#calendar').fullCalendar({
+            googleCalendarApiKey: 'AIzaSyCZ4N4D3JCQXX3mQFy1QTNzEirRVxk5wEc',
+            eventSources: [{
+                googleCalendarId: '2vp1e1s2ubsjhh2vt5v67md6fo@group.calendar.google.com'
+            }, {
+                googleCalendarId: 'id.indonesian#holiday@group.v.calendar.google.com'
+            }]
+        });
+    });
+
+</script>
 
 </body>
 </html>
