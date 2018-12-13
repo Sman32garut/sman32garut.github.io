@@ -71,8 +71,8 @@ var NavbarCollapse = function () {
                 resolution: "standard_resolution",
                 sortBy: "most-recent",
                 limit: 4,
-                template: '<div class="col-lg-3 mb-5 mb-lg-0"> <div data-animate-hover="1" data-toggle="hidden"> ' +
-                '<div class="card shadow animate-this card-visi"> <a href="{{image}}" data-caption="{{caption}}">' +
+                template: '<div class="col-md-3 col-6 mb-5 mb-lg-0"> <div data-animate-hover="1" data-toggle="hidden"> ' +
+                '<div class="card shadow animate-this"> <a href="{{image}}" data-caption="{{caption}}">' +
                 '<img src="{{image}}" alt="{{caption}}" /></a> </div> </div> </div>',
                 after: function() {
                     // disable button if no more results to load
@@ -101,8 +101,8 @@ var NavbarCollapse = function () {
                 filter: function (image) {
                     return image.tags.indexOf('pengajar') >= 0;
                 },
-                template: '<div class="col-lg-3 mb-5 mb-lg-0"> <div data-animate-hover="1" data-toggle="hidden"> ' +
-                '<div class="card shadow animate-this card-visi"> <a href="{{image}}" data-caption="{{caption}}">' +
+                template: '<div class="col-md-3 col-6 mb-5 mb-lg-0"> <div data-animate-hover="1" data-toggle="hidden"> ' +
+                '<div class="card shadow animate-this"> <a href="{{image}}" data-caption="{{caption}}">' +
                 '<img src="{{image}}" alt="{{caption}}" /></a> </div> </div> </div>',
                 after: function() {
                     // disable button if no more results to load
@@ -132,5 +132,18 @@ var NavbarCollapse = function () {
             }, 1000);
         }
         cek_gallery(0);
+    });
+}(), contact = function () {
+
+    $(document).ready(function () {
+        $('#contact').on('submit', function(e) { //use on if jQuery 1.7+
+            e.preventDefault();  //prevent form from submitting
+
+            var subject = $("#contact input[name='subject']").val();
+            var body = $("#contact textarea[name='body']").val();
+            var action = $("#contact").attr("action");
+
+            window.location = action + "?subject=" + encodeURI(subject) + "&body=" + encodeURI(body);
+        });
     });
 }();
