@@ -1,225 +1,514 @@
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="msvalidate.01" content="BF724D756DB34D9F847893131374136B" />
-	
-	<title>SMAN 32 Garut</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-	<link href='https://fonts.googleapis.com/css?family=Comfortaa:300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#f9c500">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#f9c500">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#f9c500">
 
-	<style>
-	body {
-		background-color: #efefef;
-	}
-	.vertical-center {
-		min-height: 100%;
-		min-height: 100vh;
+    <title>SMAN 32 Garut</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.0/dist/baguetteBox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 
-		display: flex;
-		align-items: center;
-	}
-	.title {
-		font-family: 'Comfortaa', cursive;
-		text-align: center;
-		font-size: 6em;
-		font-size: 9.5vw;
-	}
-	@media only screen and (min-width: 992px) {
-		.title {
-			font-size: 9em;
-			font-size: 9vw;
-		}
-	}
-	
-	.social-link, .social-link:hover {
-		color: #afafaf;
-		text-decoration: none;
-	}
-	
-	@-webkit-keyframes in_color_change {
-		from { color: #afafaf; }
-		to { color: #0077B5; }
-	}
-	@-moz-keyframes in_color_change {
-		from { color: #afafaf; }
-		to { color: #0077B5; }
-	}
-	@-ms-keyframes in_color_change {
-		from { color: #afafaf; }
-		to { color: #0077B5; }
-	}
-	@-o-keyframes in_color_change {
-		from { color: #afafaf; }
-		to { color: #0077B5; }
-	}
-	@keyframes in_color_change {
-		from { color: #afafaf; }
-		to { color: #0077B5; }
-	}
-
-	.social-link:hover i.in {
-		-webkit-animation: in_color_change .5s;
-		-moz-animation: in_color_change .5s;
-		-ms-animation: in_color_change .5s;
-		-o-animation: in_color_change .5s;
-		animation: in_color_change .5s;
-		color: #0077B5;
-	}
-
-	@-webkit-keyframes gt_color_change {
-		from { color: #afafaf; }
-		to { color: #000000; }
-	}
-	@-moz-keyframes gt_color_change {
-		from { color: #afafaf; }
-		to { color: #000000; }
-	}
-	@-ms-keyframes gt_color_change {
-		from { color: #afafaf; }
-		to { color: #000000; }
-	}
-	@-o-keyframes gt_color_change {
-		from { color: #afafaf; }
-		to { color: #000000; }
-	}
-	@keyframes gt_color_change {
-		from { color: #afafaf; }
-		to { color: #000000; }
-	}
-
-	.social-link:hover .gt {
-		-webkit-animation: gt_color_change .5s;
-		-moz-animation: gt_color_change .5s;
-		-ms-animation: gt_color_change .5s;
-		-o-animation: gt_color_change .5s;
-		animation: gt_color_change .5s;
-		color: #000000;
-	}
-
-	@-webkit-keyframes yt_color_change {
-		from { color: #afafaf; }
-		to { color: #ff0000; }
-	}
-	@-moz-keyframes yt_color_change {
-		from { color: #afafaf; }
-		to { color: #ff0000; }
-	}
-	@-ms-keyframes yt_color_change {
-		from { color: #afafaf; }
-		to { color: #ff0000; }
-	}
-	@-o-keyframes yt_color_change {
-		from { color: #afafaf; }
-		to { color: #ff0000; }
-	}
-	@keyframes yt_color_change {
-		from { color: #afafaf; }
-		to { color: #ff0000; }
-	}
-
-	.social-link:hover i.yt {
-		-webkit-animation: yt_color_change .5s;
-		-moz-animation: yt_color_change .5s;
-		-ms-animation: yt_color_change .5s;
-		-o-animation: yt_color_change .5s;
-		animation: yt_color_change .5s;
-		color: #ff0000;
-	}
-
-
-	@-webkit-keyframes fb_color_change {
-		from { color: #afafaf; }
-		to { color: #4267b2; }
-	}
-	@-moz-keyframes fb_color_change {
-		from { color: #afafaf; }
-		to { color: #4267b2; }
-	}
-	@-ms-keyframes fb_color_change {
-		from { color: #afafaf; }
-		to { color: #4267b2; }
-	}
-	@-o-keyframes fb_color_change {
-		from { color: #afafaf; }
-		to { color: #4267b2; }
-	}
-	@keyframes fb_color_change {
-		from { color: #afafaf; }
-		to { color: #4267b2; }
-	}
-
-	.social-link:hover i.fb {
-		-webkit-animation: fb_color_change .5s;
-		-moz-animation: fb_color_change .5s;
-		-ms-animation: fb_color_change .5s;
-		-o-animation: fb_color_change .5s;
-		animation: fb_color_change .5s;
-		color: #4267b2
-	}
-
-	@-webkit-keyframes tw_color_change {
-		from { color: #afafaf; }
-		to { color: #1da1f2; }
-	}
-	@-moz-keyframes tw_color_change {
-		from { color: #afafaf; }
-		to { color: #1da1f2; }
-	}
-	@-ms-keyframes tw_color_change {
-		from { color: #afafaf; }
-		to { color: #1da1f2; }
-	}
-	@-o-keyframes tw_color_change {
-		from { color: #afafaf; }
-		to { color: #1da1f2; }
-	}
-	@keyframes tw_color_change {
-		from { color: #afafaf; }
-		to { color: #1da1f2; }
-	}
-
-	.social-link:hover i.tw {
-		-webkit-animation: tw_color_change .5s;
-		-moz-animation: tw_color_change .5s;
-		-ms-animation: tw_color_change .5s;
-		-o-animation: tw_color_change .5s;
-		animation: tw_color_change .5s;
-		color: #1da1f2;
-	}
-	.blog {
-		font-family: 'Comfortaa', cursive;
-		font-size: 9px;
-		font-weight: bold;
-	}
-</style>
 </head>
 <body>
-	<div class="jumbotron vertical-center">
-		<div class="container">
-			<h1 class="title">SMAN<span class="text-danger">32</span>GARUT</h1>
-			<div class="text-center">
+<div id="loader-wrapper">
+    <img src="assets/img/logo.png">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+</div>
+
+<header class="header-transparent" id="header-main">
+
+    <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-dark bg-yellow"
+         id="navbar-main">
+        <div class="container">
+            <a class="navbar-brand mr-lg-5" href="./index.html">
+                <img alt="Image placeholder" src="assets/img/logo.png"
+                     style="height: 60px;opacity: 0.8;filter: alpha(opacity=80);">
+            </a>
+
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbar-main-collapse" style="">
+
+                <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#visi">Visi Misi</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#download">Download</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery-pengajar">Pengajar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+</header>
+<main>
+    <section class="section-rotate">
+        <div class="section-inner bg-gradient-primary">
+            <div class="background-pic"></div>
+        </div>
+
+        <div class="container pt-lg pb-xl-md position-relative zindex-100" style="margin-top: 50px;">
+            <div class="row">
+                <div class="col-lg-5 text-center text-lg-left">
+                    <a href="#download" class="alert alert-news" data-toggle="tooltip"
+                       data-original-title="See changelog">
+                        <span class="badge badge-pill badge-warning">Baru</span>
+                        <span class="alert-content">Download brosur terbaru kami.</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+
+                    <div class="">
+                        <h2 class="my-4">
+                            <span class="display-4 font-weight-normal" style="color: #980000;">SMAN 32 Garut</span>
+                            <span class="d-block" style="color: #980000;">Maju <strong class="font-weight-normal"> Bersama</strong>, Kita <strong
+                                    class="font-weight-normal"> Bisa</strong></span>
+                        </h2>
+                        <p class="lead" style="color: #980000;">
+                            Memulai dengan penuh keyakinan<br/>
+                            Menjalankan dengan penuh keikhlasan<br/>
+                            Menyelesaikan dengan penuh kebahagiaan
+                        </p>
+                        <div class="mt-5">
+                            <button class="btn btn-dark btn-circle btn-translate--hover btn-icon mr-sm-4"
+                                    data-toggle="modal" data-target="#contactModal">Hubungi Kami <span
+                                    class="btn-inner--icon"><i class="fas fa-angle-right"></i></span>
+                            </button>
+                            <button type="button" class="btn btn-outline-danger btn-circle btn-translate--hover btn-icon mr-sm-4"
+                                    data-toggle="modal" data-target="#calendarModal">
+                                Kalender <i class="fas fa-angle-right"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="visi" class="slice" style="padding-bottom: 25px">
+        <div class="mb-md text-center">
+
+            <h3 class="mt-4"><strong class="font-weight-700">V</strong>isi</h3>
+            <div class="fluid-paragraph text-center mt-4">
+                <p class="lead lh-180">Kerberadaan Sekolah Menengah Atas Negeri 32 Garut ini diharapkan</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div data-animate-hover="1" data-toggle="hidden">
+                        <div class="card shadow animate-this">
+
+                            <div class="py-3 text-center">
+                            </div>
+                            <div class="px-4 pb-5 text-center">
+                                <p class="mt-4">Mencetak lulusan yang berakhlakul karimah, berkarakter, cerdas, terampil
+                                    dan mampu bersaing dalam bidang akademik maupun non akademik yang dilandasi
+                                    pengetahuan dan tekhnologi terapan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="slice bg-gradient-secondary overflow-hidden" style="padding-top: 25px">
+
+        <div class="mb-md text-center">
+
+            <h3 class="mt-4"><strong class="font-weight-700">M</strong>isi</h3>
+            <div class="fluid-paragraph text-center mt-4">
+
+                <p class="lead lh-180">Untuk mewujudkan Visi sekolah, sekolah memiliki Misi</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-md-center">
+
+                <div class="col-lg-3 col-md-4 col-6 mb-5 mb-lg-0">
+                    <div data-animate-hover="1" data-toggle="hidden">
+                        <div class="card shadow animate-this card-visi">
+                            <div class="py-3 text-center">
+                            </div>
+                            <div class="px-4 pb-5 text-center">
+                                <p class="mt-4">Memberikan keteladanan kepada siswa dalam berbagai hal untuk mewujudkan
+                                    siswa memiliki akhlakul karimah</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6 mb-5 mb-lg-0">
+                    <div data-animate-hover="1" data-toggle="hidden">
+                        <div class="card shadow animate-this card-visi">
+
+                            <div class="py-3 text-center">
+                            </div>
+                            <div class="px-4 pb-5 text-center">
+                                <p class="mt-4">
+                                    Membina dan mengamalkan Pancasila dan UUD 1945
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6 mb-5 mb-lg-0">
+                    <div data-animate-hover="1" data-toggle="hidden">
+                        <div class="card shadow animate-this card-visi">
+
+                            <div class="py-3 text-center">
+                            </div>
+                            <div class="px-4 pb-5 text-center">
+                                <p class="mt-4">
+                                    Mendorong dan menggali potensi siswa untuk meraih pengetahuan
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6 mb-5 mb-lg-0">
+                    <div data-animate-hover="1" data-toggle="hidden">
+                        <div class="card shadow animate-this card-visi">
+
+                            <div class="py-3 text-center">
+                            </div>
+                            <div class="px-4 pb-5 text-center">
+                                <p class="mt-4">
+                                    Menumbuhkan semangat belajar dan semangat kompetensi
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6 mb-5 mb-lg-0">
+                    <div data-animate-hover="1" data-toggle="hidden">
+                        <div class="card shadow animate-this card-visi">
+
+                            <div class="py-3 text-center"></div>
+                            <div class="px-4 pb-5 text-center">
+                                <p class="mt-4">
+                                    Memberikan pembelajaran dan bimbingan secara intensif yang mengutamakan proses
+                                    pengenalan ilmu pengetahuan yang berbasis tekhnologi terapan dan kelingkungan.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
-				<a href="mailto:sman32garut@gmail.com" class="social-link">
-					<span class="fa-stack">
-						<i class="far fa-circle fa-stack-2x"></i>
-						<i class="fas fa-at fa-stack-1x gt"></i>
-					</span>
-				</a>
+
+    <section id="download" class="slice slice-xl bg-gradient-primary has-floating-items">
+        <a href="#download" class="tongue tongue-up tongue-secondary scroll-me"><i class="fa fa-angle-up"></i></a>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-black strong-600"><strong class="font-weight-700">D</strong>ownload</h1>
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-lg-8">
+                            <p class="lead text-black">
+                                Anda bisa download brosur, daftar pelajar, daftar pengajar, kurikulum, jadwal kegiatan
+                                belajar dan lain sebagainya melalui link google drive berikut:
+                            </p>
+                            <div class="btn-container mt-5">
+                                <a href="https://drive.google.com/drive/folders/1D3SpOPWoCJY2jcsE6xIZTe3RMAdmFbU4?usp=sharing"
+                                   target="_blank" class="btn btn-danger btn-circle btn-translate--hover px-4">Download
+                                    From Google Drive <i class="fab fa-google-drive"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery-pengajar" class="slice bg-gradient-secondary">
+
+        <div class="mb-md text-center">
+
+            <h3 class="mt-4"><strong class="font-weight-700">P</strong>engajar</h3>
+            <div class="fluid-paragraph text-center mt-4">
+
+                <p class="lead lh-180">Pengajar SMAN 32 Garut</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="instafeed-pengajar" class="gallery row justify-content-md-center">
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="gallery row justify-content-md-center">
+                <div class="col-lg-12 mb-12 mb-lg-0 text-center">
+                    <br/>
+                    <button class="btn btn-dark" id="pengajar-load-more">
+                        load more <span class="btn-inner--icon"><i class="fas fa-angle-down"></i></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="slice">
+
+        <div class="mb-md text-center">
+
+            <h3 class="mt-4"><strong class="font-weight-700">G</strong>allery</h3>
+            <div class="fluid-paragraph text-center mt-4">
+
+                <p class="lead lh-180">Gallery kegiatan SMAN 32 Garut</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="instafeed" class="gallery row justify-content-md-center">
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="gallery row justify-content-md-center">
+                <div class="col-lg-12 mb-12 mb-lg-0 text-center">
+                    <br/>
+                    <button class="btn btn-dark" id="gallery-load-more">
+                        load more <span class="btn-inner--icon"><i class="fas fa-angle-down"></i></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row align-items-center justify-content-md-between py-4 mt-4 delimiter-top">
+            <div class="col-md-6">
+                <div class="copyright text-sm text-center">
+                    © 2018 <a href="http://sman32garut.sch.id" class="font-weight-bold" target="_blank">SMAN 32
+                    Garut</a>. All rights reserved.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <ul class="nav justify-content-center justify-content-md-center mt-3 mt-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:sman32garut@gmail.com">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://instagram.com/sman32garut" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/sman32garut" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://facebook.com/sman32garut" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
-			</div>
+<div>
+    <div class="modal fade bd-example-modal-lg" id="calendarModal" tabindex="-1" role="dialog" aria-labelledby="calendarModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Kalender</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="calendar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		</div>
-	</div>
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document" style="overflow: hidden;">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="wrap-contact">
+                                    <div class="dtb">
+                                        <div class="dtb-cell va-middle dtb-50">
+                                            <div class="text">
+                                                <h2 style="color: #fff;">Mari Berdiskusi</h2>
+                                                <p style="color: #fff;width: 80%;">Hubungi kami untuk berdiskusi.</p>
+                                            </div>
+                                            <div id="alertContact" class="alert" role="alert" style="display:none">
+                                                <span id="alertContactText"></span>
+                                            </div>
+                                            <form role="form" method="get" action="mailto:sman32garut@gmail.com"
+                                                  id="contact">
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        <input type="text" name="subject"
+                                                               class="form-control modal-form" placeholder="Subject">
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <textarea name="body" placeholder="Pesan"
+                                                                  class="form-control modal-form text-area-form"></textarea>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <button type="submit" name="submit"
+                                                                class="btn btn-modal col-md-12">Kirim
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="dtb-cell va-middle dtb-50">
+                                            <div class="modal-contact">
+                                                <div class="contact-address">
+                                                    <div class="dtb ca">
+                                                        <div class="dtb-cell va-top ca-icon">
+                                                            <span>
+                                                            <i class="fa fa-phone"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="dtb-cell va-top ca-text">
+                                                            <div>
+                                                                <span>Telephone kami di</span>
+                                                                <p class="telphone">+62 812 2292 2203</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dtb ca">
+                                                        <div class="dtb-cell va-top ca-icon">
+                                                            <span>
+                                                            <i class="fa fa-envelope"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="dtb-cell va-top ca-text">
+                                                            <div>
+                                                                <span>Email kami di</span>
+                                                                <p>sman32garut@gmail.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dtb ca">
+                                                        <div class="dtb-cell va-top ca-icon">
+                                                            <span>
+                                                            <i class="fa fa-map-marker"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="dtb-cell va-top ca-text">
+                                                            <div>
+                                                                <span>Temui kami di</span>
+                                                                <p>Jl. Jayawiguna 02/02 desa wangunjaya kec. Banjarwangi
+                                                                    <br/> Garut, Jawa Barat, Indonesia 44172</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/baguettebox.js@1.11.0/dist/baguetteBox.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/id.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js"></script>
+<script src="./assets/js/main.js"></script>
+
+<script type='text/javascript'>
+
+    $(function() {
+        $('#calendar').fullCalendar({
+            googleCalendarApiKey: 'AIzaSyCZ4N4D3JCQXX3mQFy1QTNzEirRVxk5wEc',
+            eventSources: [{
+                googleCalendarId: '2vp1e1s2ubsjhh2vt5v67md6fo@group.calendar.google.com'
+            }, {
+                googleCalendarId: 'id.indonesian#holiday@group.v.calendar.google.com'
+            }]
+        });
+    });
+
+</script>
+
 </body>
 </html>
